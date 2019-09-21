@@ -2,7 +2,11 @@
     width: 200px;
     height: 539px;
     margin: 0 auto;
-    background: url("/img/bag.png") center no-repeat;
+    background: url("/Punch Bag/img/bag.png") center no-repeat;
+    background-size: 80%;
+}
+#bag.burst {
+    background: url("/Punch Bag/img/bag-burst.png") center no-repeat;
     background-size: 80%;
 }
 
@@ -17,7 +21,11 @@
     background: crimson;
 }
 
-#controls{
-    width: 120px;
-    margin: 0 auto;
+#controls {
+    display: flex;
+    justify-content: center;
+}
+
+#controls button{
+    margin: 0 5px;
 }

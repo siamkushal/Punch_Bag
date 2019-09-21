@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:v-on="http://www.w3.org/1999/xhtml">
+<html lang="en" xmlns:v-on="http://www.w3.org/1999/xhtml" >
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,20 +11,16 @@
 
     <div id="vue-app">
         <!--bag image-->
-        <div id="bag">
+        <div id="bag" v-bind:class="{burst:ended}"></div>
 
-        </div>
         <!--bag health-->
         <div id="bag-health">
-            <div>
-
-            </div>
-
+            <div v-bind:style="{width:health +'%'}"></div>
         </div>
-        <!--game controls-->
 
+        <!--game controls-->
         <div id="controls">
-            <button v-on:click="punch" v-show="ended">Punch</button>
+            <button v-on:click="punch" v-show="!ended">Punch</button>
             <button v-on:click="restart">Restart</button>
         </div>
     </div>
